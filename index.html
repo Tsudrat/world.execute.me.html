@@ -328,7 +328,7 @@
     </div>
 
     <audio id="song" preload="auto">
-        <source src="world-execute-me.wav" type="audio/wav">
+        <source src="world-execute-me.aac" type="audio/wav">
         Your browser does not support the audio element.
     </audio>
 
@@ -508,7 +508,7 @@
                 animationFrameId = requestAnimationFrame(update);
             }).catch(e => {
                 console.error("Audio playback failed:", e);
-                overlay.innerHTML = `<span>Error: Could not play audio.</span><span>Is 'world-execute-me.wav' in the same folder?</span>`;
+                overlay.innerHTML = `<span>Error: Could not play audio.</span><span>Is 'world-execute-me.aac' in the same folder?</span>`;
                 overlay.classList.remove('hidden');
             });
         }
